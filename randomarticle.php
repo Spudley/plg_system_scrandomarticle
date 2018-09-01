@@ -82,7 +82,6 @@ class plgSystemRandomarticle extends JPlugin
         $query .= "AND (a.publish_up <= '".date('Y-m-d H:i:s')."' OR a.publish_up = '0000-00-00 00:00:00') ".
                 "AND (a.publish_down >= '".date('Y-m-d H:i:s')."' OR a.publish_down = '0000-00-00 00:00:00') ";
 
-        $db = JFactory::getDBO();
         $db->setQuery($query);
         return $db->loadColumn();
     }
