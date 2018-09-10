@@ -1,5 +1,5 @@
-RandomArticle
-=============
+SCRandomArticle
+===============
 
 This plugin allows you to create a random article URL for each of your categories.
 

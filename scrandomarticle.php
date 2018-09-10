@@ -1,6 +1,6 @@
 <?php
 /**
- * @package   Randomarticle
+ * @package   SCRandomarticle
  * @type      Plugin (System)
  * @version   1.0.0
  * @author    Simon Champion
@@ -10,7 +10,7 @@
 
 defined('_JEXEC') or die;
 
-class plgSystemRandomarticle extends JPlugin
+class plgSystemSCRandomarticle extends JPlugin
 {
     public function onAfterInitialise()
     {
@@ -47,12 +47,12 @@ class plgSystemRandomarticle extends JPlugin
         //@todo: cache $catId and $articleIds so we can skip this bit.
         $catId = $this->loadCatId($catName);
         if (!$catId) {
-            //throw new Exception(JText::_('PLG_RANDOMARTICLE_CAT_NOT_FOUND'), 404);
+            //throw new Exception(JText::_('PLG_SCRANDOMARTICLE_CAT_NOT_FOUND'), 404);
             throw new Exception('Category not found', 404);
         }
         $articleIds = $this->loadArticleIdList($catId);
         if (!$articleIds or !count($articleIds)) {
-            //throw new Exception(JText::_('PLG_RANDOMARTICLE_CAT_EMPTY'), 404);
+            //throw new Exception(JText::_('PLG_SCRANDOMARTICLE_CAT_EMPTY'), 404);
             throw new Exception('Category is empty', 404);
         }
 
@@ -72,6 +72,7 @@ class plgSystemRandomarticle extends JPlugin
     }
 
     private function loadArticleIdList($catId) {
+        $db = JFactory::getDbo();
         $query = "SELECT a.id FROM #__content a WHERE a.catid = $catId AND a.state = '1' ";
 
         $language = JFactory::getLanguage();
