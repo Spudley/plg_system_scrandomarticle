@@ -22,8 +22,6 @@ This is a standard Joomla plugin. Installation is via Joomla's extension manager
 Usage
 ----------------
 
-###Simple usage:
-
 Firstly, set the URL pattern you want for the random links. The default value for this is `[category]/random`, which should be a good starting point. You may change it though if you wish.
 
 Now simply navigating to `http://yoursite.com/mycategory/random/` will result in the request being redirected to a random article in the `mycategory` category.
