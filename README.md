@@ -12,6 +12,7 @@ Version History
 
 * 1.0.0
 * 1.1.0 - Changed the project name to avoid a clash.
+* 1.1.1 - Missed some necessary changes.
 
 
 Installation

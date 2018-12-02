@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
 	<update>
-		<name>System - SCRandomarticle</name>
+		<name>System - SC Random Article</name>
 		<description>Allows you to have a 'random' URL that redirects to random article</description>
 		<element>scrandomarticle</element>
 		<type>plugin</type>
         <folder>system</folder>
-		<version>1.1.0</version>
+		<version>1.1.1</version>
 		<client>0</client>
-		<infourl title="Inline Tweet plugin">https://github.com/Spudley/plg_system_scrandomarticle/releases/tag/v1.1.0</infourl>
+		<infourl title="Inline Tweet plugin">https://github.com/Spudley/plg_system_scrandomarticle/releases/tag/v1.1.1</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/Spudley/plg_systemscrandomarticle/archive/v1.1.0.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/Spudley/plg_systemscrandomarticle/archive/v1.1.1.zip</downloadurl>
 		</downloads>
 		<targetplatform name="joomla" version="3.(8|9|10)" />
         <php_minimum>5.4.0</php_minimum>

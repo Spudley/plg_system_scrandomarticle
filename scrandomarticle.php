@@ -2,7 +2,7 @@
 /**
  * @package   SCRandomarticle
  * @type      Plugin (System)
- * @version   1.1.0
+ * @version   1.1.1
  * @author    Simon Champion
  * @copyright (C) 2018 Simon Champion
  * @license   GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html
